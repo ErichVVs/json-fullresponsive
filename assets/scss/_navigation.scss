@@ -45,7 +45,22 @@ nav {
 .nav-menu li a.active, .nav-menu li a:hover {
     color: #e1d9b4;
     transition: .3s;
-} 
+}
+
+.nav-menu ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: #B4B4E1;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.nav-menu ul li:hover::before {
+    width: 100%;
+}
 
 #check {
     display: none;
